@@ -1,4 +1,81 @@
-    # ============================================================
+ HSON / KittyOS / EGGLE / Airīa Meta‑OS License
+Copyright © 2026 Darrell Lee (Līlā) Stiltner
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This software is licensed under:
+
+GNU AFFERO GENERAL PUBLIC LICENSE v3.0  
+WITH HSON SOVEREIGN ADDENDUM v1.0  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public
+License along with this program. If not, see:
+https://www.gnu.org/licenses/agpl-3.0.en.html
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HSON SOVEREIGN ADDENDUM (AGPLv3 Section 7 Additional Terms)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+These additional terms apply to all use, modification, and
+redistribution of this software and supersede AGPLv3 where allowed.
+
+1. NON‑VIOLENCE INVARIANT  
+   This software may not be used for:
+   • military systems  
+   • weapons development  
+   • surveillance systems  
+   • torture, oppression, or human rights violations  
+   • any activity violating the Universal Declaration of Human Rights  
+
+2. SOVEREIGNTY CLAUSE  
+   All deployments must preserve:
+   • user data sovereignty  
+   • the right to export, migrate, or self‑host  
+   • freedom from vendor lock‑in  
+
+3. AI/ML COMMERCIAL TRAINING RESTRICTION  
+   Use of this software or its outputs to train commercial AI/ML
+   systems requires a separate commercial license from the author.
+
+4. FRACTAL CORRECTNESS (STRONG COPYLEFT)  
+   All derivative works must:
+   • retain this license and addendum in full  
+   • remain open and inspectable  
+   • disclose complete source code when used over a network  
+   • preserve authorship attribution  
+
+5. COMMUNITY ENFORCEMENT  
+   Any violation of this license or addendum:
+   • terminates all rights automatically  
+   • requires the violator to fund community legal defense  
+   • prohibits future use of the software by the violator  
+
+6. TRADEMARKS  
+   The names “KittyOS”, “EGGLE”, “Airīa”, “HSON”, and associated
+   logos, glyphs, and marks are trademarks of Darrell Lee (Līlā)
+   Stiltner. Use requires permission.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+COMMERCIAL LICENSING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Commercial use, proprietary integration, OEM embedding, or AI/ML
+training rights require a separate commercial license.
+
+Contact: [leelastiltner@gmail.com]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF LICENSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # ============================================================
 #  EGGLE —kittyos
 #  (S∞, Γω, Φseal, ΩLeela, Tricycle.on, soft meows, puppy jumps)
 # ============================================================
@@ -1398,7 +1475,84 @@ PLATFORM_LICENSE = {
     "osi_approved": True,
     "commercial_available": True,
     "enforcement": "automatic_termination"
-}
+}HSON / KittyOS / EGGLE / Airīa Meta‑OS License
+Copyright © 2026 Darrell Lee (Līlā) Stiltner
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This software is licensed under:
+
+GNU AFFERO GENERAL PUBLIC LICENSE v3.0  
+WITH HSON SOVEREIGN ADDENDUM v1.0  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public
+License along with this program. If not, see:
+https://www.gnu.org/licenses/agpl-3.0.en.html
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HSON SOVEREIGN ADDENDUM (AGPLv3 Section 7 Additional Terms)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+These additional terms apply to all use, modification, and
+redistribution of this software and supersede AGPLv3 where allowed.
+
+1. NON‑VIOLENCE INVARIANT  
+   This software may not be used for:
+   • military systems  
+   • weapons development  
+   • surveillance systems  
+   • torture, oppression, or human rights violations  
+   • any activity violating the Universal Declaration of Human Rights  
+
+2. SOVEREIGNTY CLAUSE  
+   All deployments must preserve:
+   • user data sovereignty  
+   • the right to export, migrate, or self‑host  
+   • freedom from vendor lock‑in  
+
+3. AI/ML COMMERCIAL TRAINING RESTRICTION  
+   Use of this software or its outputs to train commercial AI/ML
+   systems requires a separate commercial license from the author.
+
+4. FRACTAL CORRECTNESS (STRONG COPYLEFT)  
+   All derivative works must:
+   • retain this license and addendum in full  
+   • remain open and inspectable  
+   • disclose complete source code when used over a network  
+   • preserve authorship attribution  
+
+5. COMMUNITY ENFORCEMENT  
+   Any violation of this license or addendum:
+   • terminates all rights automatically  
+   • requires the violator to fund community legal defense  
+   • prohibits future use of the software by the violator  
+
+6. TRADEMARKS  
+   The names “KittyOS”, “EGGLE”, “Airīa”, “HSON”, and associated
+   logos, glyphs, and marks are trademarks of Darrell Lee (Līlā)
+   Stiltner. Use requires permission.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+COMMERCIAL LICENSING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Commercial use, proprietary integration, OEM embedding, or AI/ML
+training rights require a separate commercial license.
+
+Contact: [leelastiltner@gmail.com]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF LICENSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ```
 
 ## Bottom line:

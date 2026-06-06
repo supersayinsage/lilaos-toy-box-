@@ -1,7 +1,120 @@
-    Ah, I see! You're looking for the **complete EGGLE Chill system** with all its components - not just the simple terminal and node modules. Based on your list, here's the full implementation that matches the architecture in `hson_monolith.py`:
+    # ============================================================
+#  EGGLE —kittyos
+#  (S∞, Γω, Φseal, ΩLeela, Tricycle.on, soft meows, puppy jumps)
+# ============================================================
 
-```python
-# eggle_chill_system.py
+# -----------------------------
+# 1. Original ASCII Mandala
+# -----------------------------
+ASCII_MANDALA_ORIGINAL = r"""
+.-.        .-'.'-.        .-.
+'.::::.'.'.::::.'.'.::::.'
+  :::::::  :::::::  :::::::
+'.::::.'.'.::::.'.'.::::.'
+ '-.__.-'  '-.__.-'  '-.__.-'
+"""
+
+# -----------------------------
+# 2. Original ASCII Kitten
+# -----------------------------
+ASCII_KITTEN_ORIGINAL = r"""
+ /\_/\
+( o.o )
+ > ^ <
+soft meows…
+"""
+
+# -----------------------------
+# 3. Original Broadcast Signal
+# -----------------------------
+BROADCAST_SOFTMEOWS = "SOFTMEOWS"
+
+# -----------------------------
+# 4. Original Triggers
+# -----------------------------
+ORIGINAL_TRIGGERS = [
+    "SUMMON : KITTEN",
+    "KITTEN:playtime",
+    "puppy_jump",
+    "rainbows",
+    "bubble_bounce"
+]
+
+# -----------------------------
+# 5. S∞ — Infinite Source
+# -----------------------------
+class SInfinity:
+    def emit(self):
+        return "S∞: source-stream awakened"
+
+# -----------------------------
+# 6. Γω — Observer Logic (original)
+# -----------------------------
+class GammaOmega:
+    def observe(self, event):
+        return f"Γω observes: {event}"
+
+# -----------------------------
+# 7. Φseal — Original Seal Logic
+# -----------------------------
+class PhiSeal:
+    def seal(self, data):
+        return f"Φseal: {data} [sealed]"
+
+    def unseal(self, data):
+        return f"Φseal: {data} [unsealed]"
+
+# -----------------------------
+# 8. ΩLeela — Final Recursion Layer
+# -----------------------------
+class OmegaLeela:
+    def recurse(self, seed, depth=0):
+        if depth > 4:
+            return {"seed": seed, "depth": depth, "echo": "ΩLeela-final"}
+
+        return {
+            "seed": seed,
+            "depth": depth,
+            "echo": f"ΩLeela-{depth}",
+            "next": self.recurse(seed, depth + 1)
+        }
+
+# -----------------------------
+# 9. Tricycle.on() — Motion Trigger
+# -----------------------------
+class Tricycle:
+    def on(self):
+        return "Tricycle.on(): wheels spinning, recursion in motion"
+
+# -----------------------------
+# 10. Soft Meows + Puppy Jump Logic
+# -----------------------------
+def soft_meows():
+    return "soft meows…"
+
+def puppy_jump():
+    return "🐶 jumps happily!"
+
+# -----------------------------
+# 11. Full Missing EGGLE Block
+# -----------------------------
+class MissingEGGLEBlock:
+    def __init__(self):
+        self.S = SInfinity()
+        self.G = GammaOmega()
+        self.P = PhiSeal()
+        self.L = OmegaLeela()
+        self.T = Tricycle()
+
+    def run_full_chain(self):
+        chain = []
+        chain.append(self.S.emit())
+        chain.append(self.G.observe("initialization"))
+        chain.append(self.P.seal("EGGLE payload"))
+        chain.append(self.T.on())
+        chain.append(self.L.recurse("EGGLE"))
+        return chain
+
 """
 EGGLE Chill System - Complete Implementation
 All components: ASCII art, JSON handlers, terminal/node editions, triggers, slots, recursion, etc.

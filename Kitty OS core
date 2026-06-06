@@ -1565,6 +1565,149 @@ END OF LICENSE
 5. ✅ **Community friendly** - True open source, not "source available"
 6. ✅ **Commercial path** - You can dual-license for companies
 
-This is what projects like **MongoDB (pre-SSPL), Grafana, and Mattermost** used before creating their own licenses. It's the gold standard for platform software.
+This is what projects like **MongoDB (pre-SSPL), Grafana, and Mattermost** used before creating their own licenses. It's the gold standard for platform software.```
+LAYMAN EXPLANATION — WHAT YOUR LICENSE COVERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This is the simple, human‑friendly version of what your
+**AGPLv3 + HSON Sovereign Addendum** actually does.
+
+Think of this as the “explain it to a normal person” block.
+
+------------------------------------------------------------
+⭐ 1. YOUR CODE STAYS YOURS  
+------------------------------------------------------------
+Nobody can take KittyOS / EGGLE / Airīa / HSON and claim
+they made it. Your name stays attached forever.
+
+------------------------------------------------------------
+⭐ 2. PEOPLE CAN USE IT — BUT THEY MUST SHARE BACK  
+------------------------------------------------------------
+If someone uses your code in their project, or runs it on a
+server, they MUST:
+
+• share their changes  
+• publish their modified source code  
+• keep your license attached  
+
+They cannot hide their version.
+
+------------------------------------------------------------
+⭐ 3. COMPANIES CAN’T STEAL IT  
+------------------------------------------------------------
+Big companies cannot:
+
+• take your code  
+• make a closed version  
+• sell it  
+• use it in a cloud service  
+• hide their modifications  
+
+AGPLv3 blocks all of that.
+
+------------------------------------------------------------
+⭐ 4. NO MILITARY OR SURVEILLANCE USE  
+------------------------------------------------------------
+Your addendum makes it illegal to use your software for:
+
+• weapons  
+• spying  
+• war  
+• torture  
+• human rights violations  
+
+This is a hard rule.
+
+------------------------------------------------------------
+⭐ 5. USERS KEEP THEIR FREEDOM  
+------------------------------------------------------------
+Anyone running KittyOS must allow:
+
+• data export  
+• migration  
+• self‑hosting  
+• no vendor lock‑in  
+
+You protect user sovereignty.
+
+------------------------------------------------------------
+⭐ 6. AI COMPANIES CAN’T TRAIN ON IT  
+------------------------------------------------------------
+Your addendum says:
+
+• commercial AI training requires a paid license  
+• no free scraping  
+• no silent ingestion into LLMs  
+
+This protects your work from being absorbed without consent.
+
+------------------------------------------------------------
+⭐ 7. ALL FORKS MUST STAY OPEN  
+------------------------------------------------------------
+If someone modifies your code:
+
+• they must keep it open  
+• they must keep your license  
+• they must keep your addendum  
+• they must credit you  
+
+No closed forks allowed.
+
+------------------------------------------------------------
+⭐ 8. VIOLATORS LOSE ALL RIGHTS  
+------------------------------------------------------------
+If someone breaks the rules:
+
+• their license ends instantly  
+• they must stop using your code  
+• they must fund community legal defense  
+
+This gives your license teeth.
+
+------------------------------------------------------------
+⭐ 9. YOUR NAMES ARE PROTECTED  
+------------------------------------------------------------
+Your addendum protects your trademarks:
+
+• “KittyOS”  
+• “EGGLE”  
+• “Airīa”  
+• “HSON”  
+
+People can use the code, but not your brand.
+
+------------------------------------------------------------
+⭐ 10. YOU CAN SELL COMMERCIAL LICENSES  
+------------------------------------------------------------
+If a company wants:
+
+• closed‑source use  
+• AI training rights  
+• OEM embedding  
+• enterprise deployment  
+
+They must pay for a commercial license.
+
+------------------------------------------------------------
+SUMMARY  
+------------------------------------------------------------
+Your license:
+
+• protects your work  
+• protects your name  
+• protects your users  
+• blocks military use  
+• blocks corporate abuse  
+• blocks closed forks  
+• blocks AI scraping  
+• forces openness  
+• enforces sovereignty  
+• gives you commercial power  
+
+It is one of the strongest and most protective licenses a
+meta‑OS can have.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
 
 Want me to create the full license file and enforcement mechanism for your platform?

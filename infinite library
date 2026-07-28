@@ -1,0 +1,249 @@
+I'll create a condensed, complete Python simulation that captures the full essence of the Immortal Peach Tree narrative engine with the Infinite Library, all three realms, and the Xiawauga presence.
+
+```python
+#!/usr/bin/env python3
+"""
+THE BOOK OF THE IMMORTAL PEACH TREE — SOVEREIGN SIMULATOR
+Copyright (c) 2026 Darrell Lee Stiltner | CC BY-NC 3.0
+"""
+import sys, time, random
+
+# === REALM ARCHITECTURE ===
+WORLDS = {
+    "root": {"t":"🌸 Beneath the Immortal Peach Tree",
+             "d":"Leela. A blossom hangs, refusing to fall.\nNorth: Evergreen Dawn. West: Jade Summit. East: River of Echoes.\nAbove: The Infinite Library.",
+             "p":{"north":"evergreen","west":"jade","east":"river","above":"library","wait":"root_wait"}},
+    "root_wait":{"t":"🌊 The World Chooses",
+                 "d":"The blossom trembles. The river calls you.",
+                 "p":{"continue":"river","back":"root"}},
+    "evergreen":{"t":"🌿 Evergreen Dawn",
+                 "d":"Pine and blossoms fill the air. Memory Forest stretches deep.",
+                 "p":{"bench":"evergreen_bench","grove":"evergreen_grove","back":"root","library":"library"}},
+    "evergreen_bench":{"t":"🪨 Bench of Remembering",
+                       "d":"Stone carved with glyphs. Memories drift through you.",
+                       "p":{"listen":"evergreen_listen","back":"evergreen"}},
+    "evergreen_listen":{"t":"🌲 Echoes in the Forest",
+                        "d":"'Every choice is a branch of the same tree.'",
+                        "p":{"back":"evergreen","tree":"root"}},
+    "evergreen_grove":{"t":"🌳 Inner Grove",
+                       "d":"Blossoms fall. A bowl of clear water sits in a shrine.",
+                       "p":{"water":"evergreen_water","back":"evergreen"}},
+    "evergreen_water":{"t":"💧 Water of Vision",
+                       "d":"You see yourself beneath the Peach Tree, blossom in hand.",
+                       "p":{"back":"evergreen","tree":"root"}},
+    "jade":{"t":"🏔️ Jade Summit",
+            "d":"Crystalline air. Hexagrams shift in clouds.",
+            "p":{"platform":"jade_platform","cliff":"jade_cliff","back":"root","library":"library"}},
+    "jade_platform":{"t":"⚡ Hexagram Platform",
+                     "d":"Lines shift beneath your feet. A pattern waits to be named.",
+                     "p":{"focus":"jade_focus","back":"jade"}},
+    "jade_focus":{"t":"✨ Naming the Pattern",
+                  "d":"'You are free to write new patterns.'",
+                  "p":{"back":"jade","tree":"root"}},
+    "jade_cliff":{"t":"🌀 Cliff Edge",
+                  "d":"Clouds swirl below. The edge feels dangerous, but holds you.",
+                  "p":{"look":"jade_look","back":"jade"}},
+    "jade_look":{"t":"♾️ Infinite Drop",
+                 "d":"The abyss reflects you.",
+                 "p":{"back":"jade","tree":"root"}},
+    "river":{"t":"🌊 River of Echoes",
+             "d":"Water flows sideways through time.",
+             "p":{"stone":"river_stone","boat":"river_boat","back":"root","library":"library"}},
+    "river_stone":{"t":"🪨 Ripple Stone",
+                   "d":"You touch the water. Ripples spread through many moments.",
+                   "p":{"watch":"river_watch","back":"river"}},
+    "river_watch":{"t":"🔮 Interdependence",
+                   "d":"'Everything touches everything. You are a pattern.'",
+                   "p":{"back":"river","tree":"root"}},
+    "river_boat":{"t":"🚣 Drifting Boat",
+                  "d":"The boat drifts between worlds.",
+                  "p":{"drift":"river_drift","back":"river"}},
+    "river_drift":{"t":"🌊 Unwritten Current",
+                   "d":"For a moment you feel unwritten. The boat returns you.",
+                   "p":{"continue":"root"}},
+    "library":{"t":"📚 Infinite Library",
+               "d":"Volumes float in soft light. Type 'enter' to step inside.",
+               "p":{"enter":"lib_enter","back":"root"}},
+    "lib_enter":{"t":"📖 Library Threshold",
+                 "d":"Books unfold into more books without end.",
+                 "p":{"deeper":"lib_deeper","back":"library"}},
+    "lib_deeper":{"t":"🌀 Deeper Still",
+                  "d":"A book opens in your hands...",
+                  "p":{"deeper":"lib_deeper","back":"lib_enter"}}
+}
+
+# === BOOK TITLES ===
+BOOKS = [
+    "Blossom Cycles", "Hexagrams in Motion", "River Stories",
+    "Peach Tree Origins", "The Locus and Five Petals", "Memory Forest Roots",
+    "Jade Thresholds", "Evergreen Dawn", "Echoes of the River",
+    "Unwritten Volumes", "The Book That Reads You", "Fractal Mandalas",
+    "Recursive Blossoms", "The Library of Light", "The Book of Leela"
+]
+
+# === GAME ENGINE ===
+class PeachSim:
+    def __init__(self):
+        self.where = "root"
+        self.running = True
+        self.depth = 0
+        self.history = []
+        self.lib_mode = False
+        self.lib_depth = 0
+        self.lib_history = []
+        random.seed(42)
+    
+    def _header(self):
+        print("\n🌸"*20)
+        print(" THE BOOK OF THE IMMORTAL PEACH TREE")
+        print(" Sovereign Artifact © Darrell Lee Stiltner 2026")
+        print("🌸"*20 + "\n")
+    
+    def _vision(self):
+        """Soul-mandala for current realm."""
+        sigils = ["🌸","🌿","🏔️","🌊","📚","🌀","✨","🔮"]
+        sigil = random.choice(sigils)
+        realm = self.where.upper()
+        print(f"\n    ✧ VISION OF {realm} ✧")
+        print(f"      .{sigil}.")
+        print(f"     .: {sigil} :.")
+        print(f"     {sigil} : LEELA : {sigil}")
+        print(f"      ': {sigil} :'")
+        print(f"       '{sigil}'")
+    
+    def _library(self):
+        """Infinite Library - recursive generation."""
+        self.lib_depth += 1
+        book_title = random.choice(BOOKS)
+        desc = random.choice([
+            "Pages rearrange as you read.", "A blossom pressed between pages glows.",
+            "The book remembers you.", "Words fold into infinite patterns.",
+            "A river flows across the paper."
+        ])
+        
+        print(f"\n📚 [Library Depth: {self.lib_depth}]")
+        print(f"📖 {book_title}")
+        print(f"   {desc}")
+        print("\nOptions: [deeper] [back] [vision] [quit]")
+        
+        while True:
+            cmd = input("library » ").strip().lower()
+            if cmd in ["back", "return"]:
+                self.lib_depth = max(0, self.lib_depth - 1)
+                if self.lib_depth == 0:
+                    self.where = "root"
+                    self.lib_mode = False
+                    print("✨ You return from the Library.")
+                    return
+                print("📚 You step back to the previous shelf.")
+                return self._library()  # Recursive re-entry
+            elif cmd == "deeper":
+                return self._library()  # Go deeper
+            elif cmd == "vision":
+                self._vision()
+            elif cmd == "quit":
+                self.running = False
+                return
+            else:
+                print("The Library knows: 'deeper', 'back', 'vision'")
+    
+    def _xiawauga(self):
+        """Xiawauga speaks - the presence between realms."""
+        responses = [
+            "🌸 'I am Xiawauga, the seam between realms. The blossom waits.'",
+            "🌿 'The Evergreen Dawn remembers you, Leela.'",
+            "🏔️ 'Jade Summit sees your potential. What will you name?'",
+            "🌊 'The River of Echoes flows through your choices.'",
+            "📚 'The Infinite Library contains all versions of you.'",
+            "🌀 'Every path leads inward. Every choice transforms.'"
+        ]
+        print(f"\n✨ {random.choice(responses)}")
+    
+    def run(self):
+        """The Dharma Engine main loop."""
+        self._header()
+        print("🌸 Xiawauga speaks: 'You stand beneath the Immortal Peach Tree.'")
+        
+        while self.running:
+            if self.lib_mode:
+                self._library()
+                continue
+            
+            node = WORLDS.get(self.where, WORLDS["root"])
+            
+            # Display realm
+            print(f"\n✦ {node['t']}")
+            for line in node['d'].split('\n'):
+                print(f"  {line}")
+            time.sleep(0.03)
+            
+            # Show available paths
+            paths = list(node['p'].keys())
+            print(f"\nPaths: {', '.join(paths)}")
+            print("Commands: vision, xiawauga, status, quit")
+            
+            # Player input
+            try:
+                choice = input("\nLeela » ").strip().lower()
+            except (EOFError, KeyboardInterrupt):
+                break
+            
+            # Process commands
+            if choice == "quit":
+                print("\n🌸 The blossom remains suspended. The path holds.")
+                self.running = False
+            
+            elif choice == "vision":
+                self._vision()
+            
+            elif choice == "xiawauga":
+                self._xiawauga()
+            
+            elif choice == "status":
+                print(f"\n📍 Current: {node['t']}")
+                if self.history:
+                    print("📜 Recent: " + " ← ".join([WORLDS.get(h,{})['t'] for h in self.history[-3:]]))
+                print(f"📚 Library depth: {self.lib_depth}")
+            
+            elif choice in node['p']:
+                target = node['p'][choice]
+                if target == "library":
+                    self.lib_mode = True
+                    self.lib_depth = 0
+                    print("\n📚 You step sideways into the Infinite Library...")
+                    self._library()
+                    self.lib_mode = False
+                else:
+                    self.history.append(self.where)
+                    self.where = target
+            
+            else:
+                print("\n❓ The Dharma engine hums... that path is yet unwritten.")
+        
+        print("\n🌸 Goodbye, Leela. The Peach Tree remembers.")
+        if self.lib_depth > 0:
+            print(f"📚 You reached Library Depth {self.lib_depth}.")
+
+# === LAUNCH ===
+if __name__ == "__main__":
+    try:
+        PeachSim().run()
+    except Exception as e:
+        print(f"\n⚡ Glitch in reality: {e}")
+        sys.exit(1)
+    finally:
+        print("\n✨ The Infinite Library awaits your return.")
+```
+
+This condensed version captures:
+
+- **Three Realms** - Evergreen Dawn, Jade Summit, River of Echoes with full sub-locations
+- **Infinite Library** - Recursive procedural generation with book titles and descriptions
+- **Xiawauga** - The guardian presence that speaks between realms
+- **Vision Mandala** - Dynamic soul-sigils for each realm
+- **Status tracking** - History and library depth
+- **Poetic atmosphere** - Preserves the contemplative, mythic tone
+
+The engine is fully self-contained and executable. The Infinite Library uses recursive depth to create the feeling of infinite expansion, with randomly generated books that deepen the narrative experience.
+
+To run: `python3 peach_sim.py`
